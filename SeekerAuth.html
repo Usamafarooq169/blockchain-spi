@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>BSSE - Auth</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Blockchain">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/main.css" rel="stylesheet">  
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/responsive.css" rel="stylesheet">
+  <link href="fonts/flaticon.css" rel="stylesheet">
+
+  <!-- JavaScripts -->
+  <script src="js/modernizr.js"></script>
+
+  <!-- Online Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+  <!-- Wrap -->
+  <div id="wrap">
+
+    <!-- header -->
+    <header class="sticky">
+      <div class="container">
+
+        <!-- Logo -->
+        <div class="logo"> <a href="index.html">
+            <img class="img-responsive img-logo" src="images/logoo.png" alt="">
+            <span class="logo-catchline">Blockchain-Based<br> Software Engineering</span></a>
+        </div>
+        <nav class="navbar ownmenu navbar-expand-lg ">
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span><i
+                class="fas fa-bars"></i></span> </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav">
+              <li class="scroll"><a href="./index.html">Home</a></li>
+            <li class="scroll active"> <a href="./SeekerAuth.html">Estimation Seeker</a></li>
+            <li class="scroll"> <a href="./facilitatorAuth.html ">Facilitator </a> </li>
+            <li class="scroll"> <a href="./auth.html">Expert</a> </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="clearfix"></div>
+    </header>
+
+
+
+    <!-- Content -->
+    <div id="content">
+
+      <section id="contact" class="auth">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="contact">
+                <h4 class="text-white text-center mb-4">Register As Seeker</h4>
+                <!-- Success Msg -->
+                <div id="contact_message" class="success-msg"> <i class="fa fa-paper-plane-o"></i>Registeration Successfull.</div>
+
+                <!-- FORM -->
+                <form action="register.php" role="form" id="contact_form" class="contact-form signup-form authForm" method="post"
+                  >
+                  <ul class="row nolist-style">
+                    <li class="col-sm-12">
+                      <label>
+                        <input type="text" required class="form-control" name="name" id="name" placeholder="Name">
+                      </label>
+                    </li>
+                    <li class="col-sm-12">
+                      <label>
+                        <input type="email" required  class="form-control" name="email" id="email" placeholder="Email">
+                      </label>
+                    </li>
+                    <li class="col-sm-12">
+                      <label>
+                        <input type="text" required  class="form-control" name="password" id="password" placeholder="Password">
+                      </label>
+                    </li>
+                    <li class="col-sm-12 text-left">
+                      <button type="submit" class="btn btn-inverse" value="submit"
+                        id="btn_submit_signup">Signup</button>
+                    </li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="contact">
+                <h4 class="text-white text-center mb-4">Estimation Seeker Login</h4>
+                <!-- Success Msg -->
+                <div id="contact_message_login" class="success-msg"> <i class="fa fa-paper-plane-o"></i>Login Successfull</div>
+
+                <!-- FORM -->
+                <form role="form" id="contact_form" class="contact-form signin-form authForm" method="post"
+                  onSubmit="return false">
+                  <ul class="row nolist-style">
+                    <li class="col-sm-12">
+                      <label>
+                        <input required  type="email" class="form-control" name="email" id="email_login" placeholder="Email">
+                      </label>
+                    </li>
+                    <li class="col-sm-12">
+                      <label>
+                        <input type="text" required  class="form-control" name="password" id="password_email" placeholder="Password">
+                      </label>
+                    </li>
+                    <li>
+                      <button type="button" class="btn btn-primary">Seeker</button>
+                      <button type="button" class="btn btn-secondary">Expert</button>
+                      <button type="button" class="btn btn-success">Facilitator</button>
+                    </li>
+                    <li class="col-sm-12 text-left">
+                      <button type="submit" class="btn" value="submit" id="btn_submit_signin">Signin</button>
+                    </li>
+                  </ul>
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </section>
+
+
+      <!-- Footer -->
+      <footer id="contact" class="pt-4 pb-2 text-center">
+        <p class=" m-0">Blockchain-Based Software Engineering © 2020 . All rights Reserved</p>
+        <img style="max-width:40px;"
+          src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/COMSATS_Logo.svg/1200px-COMSATS_Logo.svg.png"
+          alt="">
+      </footer>
+    </div>
+
+    <!-- Script -->
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
